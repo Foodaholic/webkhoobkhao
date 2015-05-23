@@ -1,0 +1,21 @@
+default: &default
+  adapter: postgresql
+  host: localhost
+  port: 5432
+  username: developer
+  password: password
+  encoding: utf8
+
+
+development:
+  <<: *default
+  database: khoobkhao_development
+
+test:
+  <<: *default
+  database: khoobkhao_test
+
+production:
+  <<: *default
+  database: khoobkhao_production
+
