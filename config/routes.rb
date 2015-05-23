@@ -4,8 +4,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'orders#index'
-  resources :products, :only => [:index]
+  root 'food_items#index'
+  resources :food_items, :only => [:index]
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -52,7 +52,7 @@ Rails.application.routes.draw do
   # Example resource route within a namespace:
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
-  #     # (app/controllers/admin/products_controller.rb)
+  #     # (app/controllers/admin/food_items_controller.rb)
   #     resources :products
   #   end
 end
